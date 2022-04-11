@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="isLoading"
+            type="Boolean" />
+        <import type="android.view.View"/>
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainer"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_insetEdge="bottom"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/mobile_navigation" />
+
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            app:layout_insetEdge="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomAppBar"
+            android:layout_gravity="bottom"
+            >
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="match_parent"
+                app:labelVisibilityMode="unlabeled"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/windowBackground"
+                app:menu="@menu/bottom_nav_menu"
+                android:layout_gravity="bottom"
+                app:itemRippleColor="@color/purple_700"
+                app:itemIconTint="@color/bottom_navigation_icon_tint"/>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="@{isLoading?View.VISIBLE:View.INVISIBLE,default=invisible}"
+            android:id="@+id/progressBar"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">InstagramApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="sign_up">Sign up.</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="continue_as_fatih_koc">Continue as Fatih KOC</string>
+    <string name="continue_with_facebook">Continue with FaceBook</string>
+    <string name="forgot_your_login_details">Forgot your login details?</string>
+    <string name="log_in">Log in.</string>
+    <string name="password">Password</string>
+    <string name="phone_number_email_or_username">Phone number, email or username</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_up_with_email_or_phone_number">Sign up with email or phone number</string>
+    <string name="phone">PHONE</string>
+    <string name="email">EMAIL</string>
+    <string name="tr_90">TR +90</string>
+    <string name="sign_upp">Sign Up</string>
+
+    <string name="facebook_app_id">1234</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+
+</resources>

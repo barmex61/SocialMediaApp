@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.fatih.instagramapp.view.mainui.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.fatih.instagramapp.view.mainui.NotificationFragment"
+        android:label="NotificationFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.fatih.instagramapp.view.mainui.ProfileFragment"
+        android:label="ProfileFragment"
+        />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.fatih.instagramapp.view.mainui.SearchFragment"
+        android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.fatih.instagramapp.view.mainui.profileui.EditProfileFragment"
+        android:label="EditProfileFragment" >
+        <argument
+            android:name="user"
+            app:argType="com.fatih.instagramapp.model.Users" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.fatih.instagramapp.view.mainui.UserProfileFragment"
+        android:label="UserProfileFragment" >
+        <argument
+            android:name="user"
+            app:argType="com.fatih.instagramapp.model.Users" />
+    </fragment>
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.fatih.instagramapp.view.mainui.PostFragment"
+        android:label="PostFragment" />
+</navigation>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <data>
+        <variable
+            name="user"
+            type="com.fatih.instagramapp.model.Users" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appBarLayoutEditProfile">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editProfileToolbar"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/close"
+                        app:tint="@color/purple_500"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="@drawable/ripple_effect"
+                        android:id="@+id/closeImage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit profile"
+                        android:layout_toEndOf="@id/closeImage"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/black"
+                        android:includeFontPadding="false" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/save_edited_info"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:tint="@color/purple_500"
+                        android:id="@+id/saveImage" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@id/appBarLayoutEditProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:imageUrl="@{user.photo}"
+            android:id="@+id/editProfileImage"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/editProfileImage"
+            android:gravity="center_horizontal"
+            android:id="@+id/linearLayout">
+
+
+        <TextView
+            android:id="@+id/cutPhotoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:text="Select photo"
+            android:textColor="@color/text_pressed_selector"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_baseline_camera_alt_24"
+            app:drawableTint="@color/purple_500" />
+
+        <TextView
+            android:id="@+id/selectPhotoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginStart="15dp"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:text="Customize Photo"
+            android:textColor="@color/text_pressed_selector"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_baseline_content_cut_24"
+            app:drawableTint="@color/purple_500" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:id="@+id/name"
+            android:textSize="12sp"
+            android:textColor="@color/teal_200"
+            android:layout_below="@id/linearLayout"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@{user.name}"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:layout_below="@id/name"
+            android:layout_marginStart="7dp"
+            android:textSize="17sp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#4A4A4A"
+            android:id="@+id/editProfileNameText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Username"
+            android:id="@+id/userName"
+            android:textSize="12sp"
+            android:textColor="@color/teal_200"
+            android:layout_below="@id/editProfileNameText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@{user.userName}"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:layout_below="@id/userName"
+            android:layout_marginStart="7dp"
+            android:textSize="17sp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#4A4A4A"
+            android:id="@+id/editProfileUsernameText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Website"
+            android:id="@+id/website"
+            android:textSize="12sp"
+            android:textColor="@color/teal_200"
+            android:layout_below="@id/editProfileUsernameText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@{user.website}"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:layout_below="@id/website"
+            android:layout_marginStart="7dp"
+            android:textSize="17sp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#4A4A4A"
+            android:id="@+id/editProfileWebsiteText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Bio"
+            android:id="@+id/bio"
+            android:textSize="12sp"
+            android:textColor="@color/teal_200"
+            android:layout_below="@id/editProfileWebsiteText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@{user.bio}"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:layout_below="@id/bio"
+            android:layout_marginStart="7dp"
+            android:textSize="17sp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#4A4A4A"
+            android:id="@+id/editProfileBioText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#448F8F8F"
+            android:id="@+id/viewDivider"
+            android:layout_below="@id/editProfileBioText"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/switchToProfessional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewDivider"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="Switch to professional account"
+            android:textColor="@color/text_pressed_selector"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#448F8F8F"
+            android:id="@+id/viewDivider2"
+            android:layout_below="@id/switchToProfessional"
+            android:layout_marginTop="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#448F8F8F"
+            android:id="@+id/viewDivider3"
+            android:layout_below="@id/viewDivider2"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal information settings"
+            android:textColor="@color/text_pressed_selector"
+            android:textStyle="bold"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_below="@id/viewDivider3"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:layout_marginStart="10dp"
+            android:id="@+id/personalSettings"
+            android:focusable="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#448F8F8F"
+            android:id="@+id/viewDivider4"
+            android:layout_below="@id/personalSettings"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Log out"
+            android:id="@+id/logoutButton"
+            android:textColor="@color/white"
+            android:layout_below="@id/viewDivider4"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+</layout>

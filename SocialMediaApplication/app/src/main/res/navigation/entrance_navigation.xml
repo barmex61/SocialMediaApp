@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/entrance_navigation"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.fatih.instagramapp.view.loginui.ui.SignInFragment"
+        android:label="SignInFragment" >
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFirstFragment"
+            app:destination="@id/signUpFirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFirstFragment"
+        android:name="com.fatih.instagramapp.view.loginui.ui.SignUpFirstFragment"
+        android:label="SignUpFirstFragment" >
+        <action
+            android:id="@+id/action_signUpFirstFragment_to_signUpSecondFragment"
+            app:destination="@id/signUpSecondFragment" />
+        <action
+            android:id="@+id/action_signUpFirstFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:popUpTo="@id/signInFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signUpSecondFragment"
+        android:name="com.fatih.instagramapp.view.loginui.ui.SignUpSecondFragment"
+        android:label="SignUpSecondFragment" >
+        <action
+            android:id="@+id/action_signUpSecondFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:popUpTo="@id/signInFragment"/>
+    </fragment>
+</navigation>
