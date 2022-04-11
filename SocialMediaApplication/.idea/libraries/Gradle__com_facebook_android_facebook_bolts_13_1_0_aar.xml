@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.android:facebook-bolts:13.1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c16e27bac549247b63e5f55cbbb2f67c/transformed/facebook-bolts-13.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ad673f55374ab86e8ca436fcbad43c4d/transformed/facebook-bolts-13.1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/894eec89a65e95d241d83cab57af1114/transformed/facebook-bolts-13.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/894eec89a65e95d241d83cab57af1114/transformed/facebook-bolts-13.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/894eec89a65e95d241d83cab57af1114/transformed/facebook-bolts-13.1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-bolts/13.1.0/b09f746341a2e13cfc429b7f9787eaa9e5d25118/facebook-bolts-13.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-bolts/13.1.0/66c71b86201fdd2e82e627b22fa155918b3e6c2e/facebook-bolts-13.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.android:facebook-gamingservices:13.1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fb470ed7bc14d8f05b182187b3e41ba0/transformed/facebook-gamingservices-13.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7cf6d7752cced62fe12354d1aab6c246/transformed/facebook-gamingservices-13.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9ada7dca50f98dab72876b7c48333d6a/transformed/facebook-gamingservices-13.1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9ada7dca50f98dab72876b7c48333d6a/transformed/facebook-gamingservices-13.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9ada7dca50f98dab72876b7c48333d6a/transformed/facebook-gamingservices-13.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-gamingservices/13.1.0/2b0e7233ff35821e41e2a8caf1178800784a3926/facebook-gamingservices-13.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-gamingservices/13.1.0/ffe669b1dad46d97d02e33162ef29e04af6d59ba/facebook-gamingservices-13.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

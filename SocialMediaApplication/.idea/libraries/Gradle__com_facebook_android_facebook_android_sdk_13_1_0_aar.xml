@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.android:facebook-android-sdk:13.1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2cf49c87a747f5d9b53e26b978b462d4/transformed/facebook-android-sdk-13.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3dfa9dff3efdef79f4d3bd127f78c222/transformed/facebook-android-sdk-13.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5981966a49b38770ed816f6d298e1de2/transformed/facebook-android-sdk-13.1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5981966a49b38770ed816f6d298e1de2/transformed/facebook-android-sdk-13.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5981966a49b38770ed816f6d298e1de2/transformed/facebook-android-sdk-13.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-android-sdk/13.1.0/cc7bf7d3f91f4144277a5aa8b64a6b009e133bb3/facebook-android-sdk-13.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-android-sdk/13.1.0/162dcbd03691e38f85d34b1fd52ccca356ff072f/facebook-android-sdk-13.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
